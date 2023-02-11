@@ -1,0 +1,114 @@
+/* FONTS 
+
+*/
+
+
+
+body {
+    
+}
+
+.todo-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.todo-form {
+    width: 100%;
+    text-align: center;
+    margin-top: 82px;
+}
+.todo-form form input {
+    width: 40%;
+    height: 36px;
+}
+.todo-form form button {
+    background-color: cadetblue;
+    color: #fff;
+    border: none;
+    width: 88px;
+    height: 37px;
+    border-radius: 9px;
+    margin-left: 21px;
+}
+.todos-sec li {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    background-color: cadetblue;
+    margin-top: 14px;
+    padding: 0px 0px 0px 17px;
+
+}
+.todos-sec .text-sec {
+    width: 79%;
+}
+.edit-sec input {
+    width: 86%;
+    margin: 0px 20px 0 0px;
+    height: 57px;
+    background-color: cadetblue;
+    border: none;
+    outline: none;
+}
+.todos-sec {
+    width: 100%;
+    margin-top: 56px;
+    color: #fff;
+    font-size: 17px;
+}
+.todos-sec li button {
+    border: none;
+    background-color: #9d5909;
+    color: #ffff;
+    padding: 16px 14px;
+}
+
+form {
+    width: 50%;
+    display: inline-block;
+}
+.register-sec .img-sec img {
+    width: 100%;
+}
+.register {
+    position: relative;
+    top: 91px;
+    left: 52px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    transition: all 350ms ease-in-out;
+    font-weight: 400;
+    text-decoration: unset;
+}
+
+
+
+@media only screen and (max-width:1399px){
+    
+}
+@media only screen and (max-width:1199px){
+    
+}
+
+@media only screen and (max-width:767px){
+   
+}
+
+
+@media only screen and (max-width:550px){
+   
+    
+}
+
+@media only screen and (max-width:480px){
+  
+}
