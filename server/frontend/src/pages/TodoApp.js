@@ -11,7 +11,7 @@ const TodoApp = () => {
   let localStorage_id = localStorage.getItem("id");
   const navigate = useNavigate();
   function fetchTodo(user_id) {
-    axios.get(`http://localhost:8080/api/todos/${user_id}`).then((response) => {
+    axios.get(`/api/todos/${user_id}`).then((response) => {
       setData(response.data);
     });
   }
@@ -20,7 +20,7 @@ const TodoApp = () => {
   }, []);
   const createTodo = (text) => {
     axios
-      .post("http://localhost:8080/api/todos/", {
+      .post("/api/todos/", {
         id: localStorage.getItem("id"),
         text: text,
       })
@@ -32,7 +32,7 @@ const TodoApp = () => {
 
   function deleteTodo(id) {
     axios
-      .post(`http://localhost:8080/api/todos/${id}`, {
+      .post(`/api/todos/${id}`, {
         localStorage_id: localStorage_id,
       })
       .then((res) => {
@@ -42,7 +42,7 @@ const TodoApp = () => {
 
   function editTodo(todo_id) {
     axios
-      .put(`http://localhost:8080/api/todos/checkediting/${todo_id}`, {
+      .put(`/api/todos/checkediting/${todo_id}`, {
         user_ID: localStorage_id,
       })
       .then((res) => {
@@ -52,7 +52,7 @@ const TodoApp = () => {
   }
   function updateTodo(todo_id) {
     axios
-      .put(`http://localhost:8080/api/todos/checkediting/${todo_id}`, {
+      .put(`/api/todos/checkediting/${todo_id}`, {
         user_ID: localStorage_id,
       })
       .then((res) => {
@@ -60,7 +60,7 @@ const TodoApp = () => {
         console.log(res.data);
       });
     axios
-      .put(`http://localhost:8080/api/todos/update/${todo_id}`, {
+      .put(`/api/todos/update/${todo_id}`, {
         user_ID: localStorage_id,
         text: editText,
       })
@@ -71,7 +71,7 @@ const TodoApp = () => {
   }
 
   function completeTodo(id) {
-    axios.post(`http://localhost:8080/api/todos/complete/${id}`,{
+    axios.post(`/api/todos/complete/${id}`,{
       user_ID:localStorage_id
     }).then((res) => {
       setData(res.data);
