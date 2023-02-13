@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "vercel": "^28.15.3"
+  },
+  "name": "mern-todo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamza-ali313/mern-Todo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hamza-ali313/mern-Todo/issues"
+  },
+  "homepage": "https://github.com/hamza-ali313/mern-Todo#readme",
+  "description": ""
+}

@@ -11,7 +11,7 @@ import Login from "./pages/Login";
 // NEW
 function Main() {
   return (
-    <BrowserRouter>
+    <BrowserRouter  basename='/'>
       <header className="pageheader">
       </header>
       {/* <App /> */}

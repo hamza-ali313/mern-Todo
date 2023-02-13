@@ -7,6 +7,7 @@ import dotenv from 'dotenv'
 dotenv.config()
 import todoRoutes from "./routes/todoroutes.js";
 import authRoutes from './routes/authRoutes.js'
+const path = require("path");
 app.use(express.json());
 app.use(cors());
 app.use(cookieParser());
@@ -24,3 +25,17 @@ mongoose.connect(process.env.MONGO).then(() => {
   app.get('/',(req,res)=>{
     res.send("server is up and running successfully")
   })
+
+
+  app.use('/', require(path.join(__dirname, 'api', 'routes')));
+
+// static files (build of your frontend)
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, './frontend/build')));
+  app.get('/*', (req, res) => {
+    res.sendFile(path.join(__dirname, './frontend/build/index.html'));
+  })
+}
+
+
+module.exports = app;

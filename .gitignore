@@ -3,7 +3,7 @@
 #--------------------------#
 
 /PATCH_*.sh
-
+node_modules
 /app/etc/local.xml
 
 /media/*
@@ -43,3 +43,4 @@
 /var/package/*
 !/var/package/*.xml
 
+.vercel
