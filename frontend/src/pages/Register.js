@@ -34,7 +34,7 @@ const Register = () => {
     <div className="register-sec">
       <Container>
         <Row>
-          <Col md={6}>
+          <Col md={6} lg={6} sm={12}>
             <div className="">
               <div className="register">
                 <div className="title">
@@ -93,7 +93,7 @@ const Register = () => {
               </div>
             </div>
           </Col>
-          <Col md={6}>
+          <Col md={6} lg={6} sm={12}>
             <div className="img-sec">
               <img src={todoImg} />
             </div>
