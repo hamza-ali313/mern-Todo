@@ -110,5 +110,20 @@ a {
 }
 
 @media only screen and (max-width:480px){
-  
+    .btns-sec button {
+        width: 59%;
+    }
+    .btns-sec {
+        width: 30%;
+    }
+    .todos-sec .text-sec {
+        width: 70%;
+    }
+    .todo-form form {
+        display: inline;
+    }
+    .todo-form form input {
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
