@@ -106,7 +106,7 @@ const TodoApp = () => {
                 value={text}
                 type="text"
               />
-              <button>Add todo</button>
+              <button>Add </button>
             </form>
           </div>
           <div className="todos-sec">
